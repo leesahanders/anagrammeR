@@ -1,3 +1,5 @@
+# Written by Roger
+
 library(httr)
 library(jsonlite)
 
@@ -42,3 +44,10 @@ stations <- c('KTXDALLA724', 'KWASEATT2743')
 for (id in stations) {
   GetWeather(id)
 }
+
+
+# You can pick additional weather stations using this map to guide you - https://www.wunderground.com/wundermap
+# wunderground.comwunderground.com
+
+# So for example, if you want a station in England, you can pick a station code from over there - https://www.wunderground.com/dashboard/pws/ILONDO400
+# wunderground.comwunderground.com
