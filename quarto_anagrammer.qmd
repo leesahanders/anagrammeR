@@ -1,12 +1,89 @@
-#! /usr/bin/python3
+---
+title: "quarto_anagrammer"
+author: "Lisa Anders"
+editor: visual
+toc: true
+format:
+  html:
+    toc: false
+    echo: false
+    code-fold: true
+    code-summary: "Show the code"
+    code-tools: true
+execute:
+  warning: false
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+References 
+
+https://arrow.apache.org/docs/r/
+
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+R:
+
+```{r}
+# | code-fold: true
+# | code-summary: "Show the code"
+
+# ---
+# title: "quarto_anagrammer"
+# author: "Lisa Anders"
+# editor: visual
+# toc: true
+# format:
+#   html:
+#     toc: false
+#     echo: false
+#     keep-hidden: true
+#     code-tools: true
+# execute:
+#   warning: false
+# ---
+
+# ---
+# title: "quarto_anagrammer"
+# author: "Lisa Anders"
+# format:
+# html:
+#   code-fold: true
+#   code-tools: true
+# editor: visual
+# format:
+#   html:
+#     html-math-method: katex
+#     code-tools: true
+#     self-contained: true
+# ---
+
+1 + 1
+```
+
+Python:
+
+```{python}
+1 + 1
+```
+
+## Python
+
+```{python}
+
+# | code-fold: true
+# | code-summary: "Show the code"
 
 __author__ = 'Roger Andre, May 2015'
 
 '''Find every anagram for a word that is present in a dictionary file.  
 Only evaluates words that are at least 4 letters long.  Only list anagrams 
 where there are at least as many words as there are letters in the seed.'''
-
-'''TODO: with statements, refer to: https://www.statology.org/with-open-python/ '''
 
 import sys
 
@@ -58,3 +135,11 @@ def main():
 
 if __name__ == '__main__':
   main()
+
+```
+
+## R
+
+```{r}
+word_data <- read.table("sample_dict.txt",sep=" ",header=T)
+```

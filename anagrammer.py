@@ -6,8 +6,6 @@ __author__ = 'Roger Andre, May 2015'
 Only evaluates words that are at least 4 letters long.  Only list anagrams 
 where there are at least as many words as there are letters in the seed.'''
 
-'''TODO: with statements, refer to: https://www.statology.org/with-open-python/ '''
-
 import sys
 
 def getData(txt_file = 'dict.txt'):
